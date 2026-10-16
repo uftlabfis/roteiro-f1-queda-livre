@@ -8,7 +8,7 @@
 
 <meta name="author" content="Laboratório de Física">
 
-<title>Título do Roteiro</title>
+<title>Queda Livre</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -64,7 +64,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6ac2aec46ad7f46b16024ee4409aa65c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -135,13 +135,13 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <div class="quarto-other-links"><h2>Baixar Material</h2><ul><li><a href="titulo-do-roteiro.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro do Experimento</a></li><li><a href="https://raw.githubusercontent.com/uftlabfis/uftlabfis-uftlabfis-roteiros/main/instrumentacao/papel-milimetrado-18x22.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Papel milimetrado</a></li><li><a href="https://uftlabfis.pythonanywhere.com/file/02_mruv_v2020_01.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Outro roteiro</a></li></ul></div></div>
+    <div class="quarto-other-links"><h2>Baixar Material</h2><ul><li><a href="queda-livre.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro do Experimento</a></li><li><a href="https://raw.githubusercontent.com/uftlabfis/uftlabfis-uftlabfis-roteiros/main/instrumentacao/papel-milimetrado-18x22.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Papel milimetrado</a></li><li><a href="assets/alternatives/queda-livre-prof-heverton.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro do prof. Heverton</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Título do Roteiro</h1>
+<h1 class="title">Queda Livre</h1>
 </div>
 
 
@@ -165,7 +165,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Última atualização</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">15 de setembro de 2026</p>
+      <p class="date">16 de outubro de 2026</p>
     </div>
   </div>
   
@@ -179,46 +179,59 @@ window.Quarto = {
 
 <section id="introdução" class="level2">
 <h2 data-anchor-id="introdução">Introdução</h2>
-<p>Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.</p>
-<p>Conforme <span class="citation" data-cites="Halliday1">Halliday; Resnick; Walker (<a href="#ref-Halliday1" role="doc-biblioref">2016</a>)</span>, <em>energia cinética</em> é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa (<span class="math inline">\(m\)</span>) que se move com velocidade (<span class="math inline">\(v\)</span>), a energia cinética é dada por</p>
+<p>A queda livre (QL) é um caso particular do Movimento Retilíneo Uniformemente Variado (MRUV), no qual um corpo se desloca verticalmente sob a ação exclusiva da gravidade, com aceleração constante <span class="math inline">\(g\)</span>. Desprezando a resistência do ar e o empuxo atmosférico, a aceleração independe da massa do corpo, conforme demonstrado por Galileu Galilei <span class="citation" data-cites="Halliday1">(<a href="#ref-Halliday1" role="doc-biblioref">Halliday; Resnick; Walker, 2016</a>)</span>.</p>
+<p>Considerando o corpo abandonado do repouso (<span class="math inline">\(v_0 = 0\)</span>), a partir da origem (<span class="math inline">\(h_0 = 0\)</span>), e adotando o sentido da queda como positivo, a posição <span class="math inline">\(h\)</span> no instante <span class="math inline">\(t\)</span> é dada por:</p>
+<p><span id="eq-posicao"><span class="math display">\[
+h = \dfrac{1}{2} g t^2
+\tag{1}\]</span></span></p>
+<p>Analogamente, a velocidade instantânea <span class="math inline">\(v\)</span> varia linearmente com o tempo <span class="math inline">\(t\)</span>:</p>
+<p><span id="eq-velocidade"><span class="math display">\[
+v = g t
+\tag{2}\]</span></span></p>
+<p>Combinando essas equações, obtém-se uma expressão para estimar a velocidade instantânea a partir da altura e do tempo de queda:</p>
 <p><span class="math display">\[
-K = \dfrac{1}{2} m v^2
+  \dfrac{v}{h} = \dfrac{g t }{\dfrac{1}{2} gt^2} \Rightarrow \dfrac{v}{h} = \dfrac{2}{t}
 \]</span></p>
-<p>Utilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada.</p>
-<p>Por exemplo, a <a href="#fig-labfis-logo" class="quarto-xref">Figura&nbsp;1</a> mostra o logo do Laboratório de Física.</p>
-<div id="fig-labfis-logo" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-labfis-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;1: Logo do Labfis
-</figcaption>
-<div aria-describedby="fig-labfis-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="assets/images/labfis-logo-transparente.png" class="img-fluid figure-img" style="width:50.0%">
-</div>
-</figure>
-</div>
-<div style="text-align: center; font-size: smaller;">
-<p><strong>Fonte:</strong> Labfis (2026)</p>
-</div>
+<p><span id="eq-velocidade-ht"><span class="math display">\[
+  v = \dfrac{2 h}{t}
+\tag{3}\]</span></span></p>
+<p>Neste experimento, serão medidas a altura de queda (<span class="math inline">\(h\)</span>) e o tempo (<span class="math inline">\(t\)</span>). Com esses dados, a velocidade será estimada pela <a href="#eq-velocidade-ht" class="quarto-xref">Equação&nbsp;3</a> e, a partir da relação entre velocidade e tempo, será determinada a aceleração da gravidade local (<span class="math inline">\(g\)</span>).</p>
 </section>
 <section id="objetivos" class="level2">
 <h2 data-anchor-id="objetivos">Objetivos</h2>
-<p>Apresente de forma clara e objetiva o que se pretende alcançar com a atividade experimental, utilizando verbos de ação como</p>
 <ol type="1">
-<li>Investigar</li>
-<li>Analisar</li>
-<li>Determinar</li>
-<li>Verificar</li>
-<li>Compreender</li>
+<li>Investigar o movimento de queda livre de um corpo sob a ação da força gravitacional.</li>
+<li>Determinar a velocidade instanânea de um objeto em queda livre a partir de medidas de tempo e altura de queda.</li>
+<li>Determinar a aceleração da gravidade a partir de dados de tempo e velocidade.</li>
 </ol>
 </section>
 <section id="material-necessário" class="level2">
 <h2 data-anchor-id="material-necessário">Material necessário</h2>
-<p>Liste todos os materiais, equipamentos e instrumentos que serão utilizados na atividade experimental, de forma organizada e objetiva.</p>
+<div id="fig-aparato-experimental" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-aparato-experimental-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1
+</figcaption>
+<div aria-describedby="fig-aparato-experimental-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Aparato experimental</figcaption>
+<p><img src="assets/images/aparato-queda-livre.png" class="img-fluid figure-img" data-max-width="100%" width="350"></p>
+</figure>
+</div>
+<div style="text-align: center;">
+<p><strong>Fonte:</strong> Labfis (2026)</p>
+</div>
+</div>
+</figure>
+</div>
 <ul>
-<li>Balança;</li>
-<li>Cronômetro;</li>
-<li>Paquímetro;</li>
-<li>Trilho de baixo atrito.</li>
+<li>Sistema de sustentação principal de aço;</li>
+<li>Cronômetro digital;</li>
+<li>Sensor fotoelétrico;</li>
+<li>Bobina de retenção magnética;</li>
+<li>Esfera metálica;</li>
+<li>Trena.</li>
 </ul>
 </section>
 <section id="referências" class="level2">
@@ -299,7 +312,7 @@ HALLIDAY, D.; RESNICK, R.; WALKER, J. <strong>Fundamentos de Física: Mecânica<
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/costandrad\.github\.io\/uftlabfis-roteiro-web-template\/");
+        var filterRegex = new RegExp("https:\/\/uftlabfis\.github\.io\/roteiro-f1-queda-livre\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
